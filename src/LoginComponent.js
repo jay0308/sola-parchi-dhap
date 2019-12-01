@@ -4,7 +4,7 @@ import axios from 'axios';
 import App from './App';
 
 const ajaxCall = (args) => {
-  let url = "http://192.168.43.123:4000" + args.url
+  let url = "https://sola-parchi-dhap.herokuapp.com:4000" + args.url
   if (args.method.toLowerCase() === 'get') {
     return axios({
       method: args.method,
